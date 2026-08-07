@@ -1,0 +1,372 @@
+/* ============================================================
+   1. DESIGN TOKENS
+   Farbpalette orientiert an Aachen: warmes Steingrau (Fassaden,
+   Kopfsteinpflaster) + dunkles Petrol/Türkis als Akzent
+   (angelehnt an die Kupferdächer & Thermalquellen der Stadt).
+   ============================================================ */
+:root {
+  /* Grautöne */
+  --color-bg:          #f2f2ef;
+  --color-surface:     #ffffff;
+  --color-ink:         #1e2624;
+  --color-muted:       #6c7572;
+  --color-line:        #dedad2;
+
+  /* Petrol-Akzent */
+  --color-accent:      #0c4f49;
+  --color-accent-light:#15776d;
+  --color-accent-soft: #e3efec;
+
+  /* Typografie */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --max-width: 480px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+}
+
+/* ============================================================
+   2. RESET & GRUNDLAGEN
+   ============================================================ */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: inherit; }
+
+/* Sichtbarer Fokus für Tastatur/Screenreader-Nutzung unterwegs */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Bewegung reduzieren, wenn vom Betriebssystem gewünscht */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  * { animation: none !important; transition: none !important; }
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+
+/* ============================================================
+   3. FORTSCHRITTSLEISTE (fixiert oben)
+   Zeigt dezent, wo in der Route man sich befindet.
+   ============================================================ */
+.progress-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(242, 242, 239, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.progress-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px var(--space-2);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
+.progress-bar__label { font-weight: 500; }
+.progress-bar__label strong { color: var(--color-ink); }
+
+.progress-bar__track {
+  position: absolute;
+  left: 0; bottom: -1px;
+  height: 2px;
+  width: 100%;
+  background: var(--color-line);
+}
+.progress-bar__fill {
+  height: 100%;
+  width: 0%; /* wird per JS gesetzt */
+  background: var(--color-accent);
+  transition: width 0.25s ease-out;
+}
+
+/* ============================================================
+   4. HERO
+   ============================================================ */
+.hero {
+  padding: var(--space-4) 0 var(--space-3);
+  text-align: center;
+}
+
+.hero__mark {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-2);
+  color: var(--color-accent);
+}
+
+.hero__eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 560;
+  font-size: clamp(34px, 9vw, 44px);
+  line-height: 1.08;
+  margin: 0 0 var(--space-1);
+}
+
+.hero__subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 440;
+  color: var(--color-accent-light);
+  font-size: 17px;
+  margin: 0 0 var(--space-2);
+}
+
+.hero__text {
+  color: var(--color-muted);
+  font-size: 15px;
+  max-width: 38ch;
+  margin: 0 auto var(--space-3);
+}
+
+.hero__meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: var(--space-3);
+}
+.hero__meta b { display: block; color: var(--color-ink); font-size: 15px; font-weight: 600; }
+
+/* ============================================================
+   5. GROSSE BUTTONS
+   Ein durchgängiger Button-Stil für alle Handlungsaufforderungen.
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 17px 24px;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.15s ease, background 0.2s ease;
+  text-decoration: none;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn--primary {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+.btn--primary:hover { background: var(--color-accent-light); }
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1.5px solid var(--color-accent-soft);
+}
+.btn--ghost:hover { border-color: var(--color-accent); }
+
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+/* ============================================================
+   6. ROUTE / STATIONEN
+   Signatur-Element: eine vertikale "Weglinie" verbindet die
+   Stationen wie eine Route auf einem Stadtplan. Eine zweite,
+   petrolfarbene Linie füllt sich beim Scrollen und macht den
+   eigenen Fortschritt entlang der Strecke sichtbar.
+   ============================================================ */
+.route {
+  position: relative;
+  padding: var(--space-2) 0 var(--space-4);
+}
+
+.route-line {
+  position: absolute;
+  left: 27px;
+  top: 8px;
+  bottom: 40px;
+  width: 2px;
+  background: var(--color-line);
+}
+
+.route-line__fill {
+  position: absolute;
+  left: 27px;
+  top: 8px;
+  width: 2px;
+  height: 0%; /* Höhe wird per JS als Scroll-Fortschritt gesetzt */
+  background: var(--color-accent);
+}
+
+.station {
+  position: relative;
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  scroll-margin-top: 64px; /* Platz für die fixierte Fortschrittsleiste */
+}
+
+/* Meilenstein-Marker: nummeriert wie ein historischer Wegstein */
+.station__marker {
+  position: relative;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--color-muted);
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  z-index: 1;
+}
+
+/* Aktive Station (im Sichtbereich) wird petrolfarben hervorgehoben */
+.station.is-active .station__marker {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.station__card {
+  flex: 1;
+  min-width: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+  box-shadow: 0 1px 2px rgba(30, 38, 36, 0.04), 0 12px 28px rgba(30, 38, 36, 0.06);
+}
+
+.station__figure {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Eigens gezeichnete Wahrzeichen-Illustrationen statt Fotos:
+   ruhiger, konsistenter Stil, keine Ladezeiten/Lizenzfragen. */
+.station__figure svg {
+  width: 62%;
+  height: 62%;
+  color: var(--color-accent);
+}
+
+.station__eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-light);
+  margin: 0 0 4px;
+}
+
+.station__title {
+  font-family: var(--font-display);
+  font-weight: 560;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 var(--space-2);
+}
+
+.station__audio {
+  width: 100%;
+  margin-bottom: var(--space-2);
+  accent-color: var(--color-accent);
+  border-radius: 999px;
+}
+
+.station__text {
+  font-size: 15px;
+  color: var(--color-ink);
+  opacity: 0.85;
+  margin: 0 0 var(--space-2);
+}
+
+/* Optionaler Link zum Standort (nur gerendert, wenn in den
+   Stationsdaten ein mapsUrl-Feld vorhanden ist) */
+.station__maps {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-accent-light);
+  text-decoration: none;
+  margin: 0 0 var(--space-2);
+}
+.station__maps:hover { text-decoration: underline; }
+
+/* ============================================================
+   7. ABSCHLUSS
+   ============================================================ */
+.finish {
+  text-align: center;
+  padding: var(--space-3) var(--space-2) var(--space-4);
+}
+.finish__title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  margin: 0 0 var(--space-1);
+}
+.finish__text {
+  color: var(--color-muted);
+  font-size: 15px;
+  max-width: 34ch;
+  margin: 0 auto var(--space-3);
+}
+
+footer {
+  text-align: center;
+  padding: var(--space-3) var(--space-2) var(--space-4);
+  color: var(--color-muted);
+  font-size: 12.5px;
+}
