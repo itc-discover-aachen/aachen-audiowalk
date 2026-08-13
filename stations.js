@@ -43,7 +43,7 @@ var STATIONS = [
           'zur Wissenschaftsstadt — und damit einen passenden Schlusspunkt für alle, ' +
           'die gleich wieder in den Hörsaal zurückkehren.',
     mapsUrl: 'https://maps.google.com/?q=SuperC+RWTH+Aachen'
-   }  
+   },
    {
     id: 'dom',
     title: 'Aachener Dom',
