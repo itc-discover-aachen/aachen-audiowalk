@@ -29,8 +29,22 @@ var STATIONS = [
           'Bauwerken nördlich der Alpen und war 1978 die erste deutsche Stätte auf ' +
           'der UNESCO-Welterbeliste.',
     mapsUrl: 'https://www.google.com/maps/place/Ponttor/@50.7810127,6.0754486,16.71z/data=!4m10!1m2!2m1!1sPonttor!3m6!1s0x47c09977675fb641:0x5701a4017f4764c5!8m2!3d50.7816158!4d6.0781955!15sCgdQb250dG9ykgETaGlzdG9yaWNhbF9sYW5kbWFya-ABAA!16s%2Fm%2F0x24gd5?entry=ttu&g_ep=EgoyMDI2MDgxMC4wIKXMDSoASAFQAw%3D%3D'
-  },
-  {
+   },
+   {
+    id: 'superc',
+    title: 'SuperC — RWTH Aachen',
+    imageSrc: null,
+    icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
+          '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
+          '<path d="M20 40 L80 40 M50 26 V84"/>' +
+          '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
+    audioSrc: 'audio/05-superc.mp3',
+    text: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
+          'zur Wissenschaftsstadt — und damit einen passenden Schlusspunkt für alle, ' +
+          'die gleich wieder in den Hörsaal zurückkehren.',
+    mapsUrl: 'https://maps.google.com/?q=SuperC+RWTH+Aachen'
+   }  
+   {
     id: 'dom',
     title: 'Aachener Dom',
     imageSrc: null,
@@ -91,18 +105,5 @@ var STATIONS = [
           'Brunnen erinnert an eine der bekanntesten Aachener Sagen.',
     mapsUrl: 'https://maps.google.com/?q=Fischmarkt+Aachen'
   },
-  {
-    id: 'superc',
-    title: 'SuperC — RWTH Aachen',
-    imageSrc: null,
-    icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
-          '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
-          '<path d="M20 40 L80 40 M50 26 V84"/>' +
-          '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
-    audioSrc: 'audio/05-superc.mp3',
-    text: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
-          'zur Wissenschaftsstadt — und damit einen passenden Schlusspunkt für alle, ' +
-          'die gleich wieder in den Hörsaal zurückkehren.',
-    mapsUrl: 'https://maps.google.com/?q=SuperC+RWTH+Aachen'
-  }
+  
 ];
