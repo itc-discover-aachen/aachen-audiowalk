@@ -180,5 +180,21 @@ var STATIONS = [
           'war über Generationen Treffpunkt der Kurgäste — heute ein beliebter ' +
           'Ausgangspunkt für Stadtspaziergänge.',
     mapsUrl: 'https://www.google.com/maps/place/Elisenbrunnen/@50.7741148,6.0866496,19.83z/data=!4m6!3m5!1s0x47c0996312556c85:0x8eb3785ac7865d2e!8m2!3d50.7740678!4d6.0869838!16s%2Fg%2F121k2brc?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
+  },
+   {
+    id: 'restaurant',
+    title: 'Restaurant Elisenbrunnen',
+    imageSrc: null,
+    icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
+          '<path d="M14 34 L50 18 L86 34"/>' +
+          '<rect x="14" y="34" width="72" height="6"/>' +
+          '<path d="M24 40 v34 M40 40 v34 M60 40 v34 M76 40 v34"/>' +
+          '<path d="M14 78 h72"/></svg>',
+    audioSrc: 'audio/03-elisenbrunnen.mp3',
+    text: 'Der klassizistische Pavillon von 1827 führt die schwefelhaltigen ' +
+          'Thermalquellen, die schon die Römer schätzten. Die offene Wandelhalle ' +
+          'war über Generationen Treffpunkt der Kurgäste — heute ein beliebter ' +
+          'Ausgangspunkt für Stadtspaziergänge.',
+    mapsUrl: 'https://www.google.com/maps/place/Restaurant+Elisenbrunnen/@50.7744397,6.0867559,19.83z/data=!4m6!3m5!1s0x47c099630b75213f:0x510a227acb81da3e!8m2!3d50.7744328!4d6.0868055!16s%2Fg%2F1ptw08m95?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
   }, 
 ];
