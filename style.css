@@ -199,14 +199,14 @@ a { color: inherit; }
   background: var(--color-accent);
   color: #ffffff;
 }
-.btn--primary:hover { background: var(--color-accent-light); }
+.btn--primary:hover { background: var(--color-accent); }
 
 .btn--ghost {
   background: transparent;
   color: var(--color-accent);
   border: 1.5px solid var(--color-accent-soft);
 }
-.btn--ghost:hover { border-color: var(--color-accent); }
+.btn--ghost:hover { border-color: var(--color-accent-light); }
 
 .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
