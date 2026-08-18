@@ -47,7 +47,7 @@ var STATIONS = [
    {
     id: 'hauptgebäude',
     title: 'Hauptgebäude — RWTH Aachen',
-    imageSrc: 'imgages/hauptgebäude.jpg',
+    imageSrc: 'images/hauptgebäude.jpg',
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
