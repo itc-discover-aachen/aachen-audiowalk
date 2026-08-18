@@ -33,7 +33,7 @@ var STATIONS = [
    {
     id: 'superc',
     title: 'SuperC — RWTH Aachen',
-    imageSrc: null,
+    imageSrc: 'images/superc.jpg',
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
@@ -47,7 +47,7 @@ var STATIONS = [
    {
     id: 'hauptgebäude',
     title: 'Hauptgebäude — RWTH Aachen',
-    imageSrc: null,
+    imageSrc: 'imgages/hauptgebäude.jpg',
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
@@ -61,7 +61,7 @@ var STATIONS = [
    {
     id: 'karmantor',
     title: 'Karmantor — RWTH Aachen',
-    imageSrc: null,
+    imageSrc: 'images/karmantor.jpg',
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
