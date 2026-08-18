@@ -23,22 +23,20 @@
     return result;
   }
 
-  function renderStationMarkup(station, index, isLast, nextStation) {
+  function renderStationMarkup(station, index, isLast) {
     var figure = station.imageSrc
       ? '<img src="' + station.imageSrc + '" alt="' + station.title + '">'
       : station.icon;
 
     var eyebrow = 'Station ' + (index + 1) + (isLast ? ' · Ziel' : '');
 
-    var mapsLink = station.mapsUrl
-      ? '<a class="station__maps" href="' + station.mapsUrl + '" target="_blank" rel="noopener">' +
-        'Standort auf Google Maps öffnen ↗</a>'
-      : '';
-
-    var nextButton = !isLast
-      ? '<a href="#station-' + nextStation.id + '" class="btn btn--primary btn--next">' +
-        'Zur nächsten Station' +
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
+    // Statt eines "Zur nächsten Station"-Buttons (Scrollen reicht) steht
+    // hier jetzt der Google-Maps-Link als Button — nur wenn eine
+    // Station ein mapsUrl-Feld hat.
+    var mapsButton = station.mapsUrl
+      ? '<a href="' + station.mapsUrl + '" target="_blank" rel="noopener" class="btn btn--ghost">' +
+        'Auf Google Maps öffnen' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>' +
         '</a>'
       : '';
 
@@ -53,8 +51,7 @@
             'Ihr Browser unterstützt die Audiowiedergabe leider nicht.' +
           '</audio>' +
           '<p class="station__text">' + station.text + '</p>' +
-          mapsLink +
-          nextButton +
+          mapsButton +
         '</div>' +
       '</section>'
     );
@@ -64,8 +61,7 @@
     var container = document.getElementById('stationsContainer');
     container.innerHTML = STATIONS.map(function (station, index) {
       var isLast = index === STATIONS.length - 1;
-      var nextStation = isLast ? null : STATIONS[index + 1];
-      return renderStationMarkup(station, index, isLast, nextStation);
+      return renderStationMarkup(station, index, isLast);
     }).join('');
 
     // Abhängige UI-Elemente an die tatsächliche Stationsanzahl
