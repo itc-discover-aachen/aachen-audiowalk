@@ -196,14 +196,15 @@ a { color: inherit; }
 .btn:active { transform: scale(0.97); }
 
 .btn--primary {
-  background: var(--color-accent);
-  color: #ffffff;
+  background: transparent;
+  color: var(--color-accent);
+  
 }
 .btn--primary:hover { background: var(--color-accent); }
 
 .btn--ghost {
-  background: transparent;
-  color: var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
   border: 1.5px solid var(--color-accent-soft);
 }
 .btn--ghost:hover { border-color: var(--color-accent-light); }
