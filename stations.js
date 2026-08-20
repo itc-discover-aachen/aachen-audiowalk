@@ -122,7 +122,7 @@ var STATIONS = [
     {
     id: 'puppenbrunnen',
     title: 'Puppenbrunnen',
-    imageSrc: 'images/puppenbrunnen.jpg',
+    imageSrc: 'images/Puppenbrunnen.jpg',
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<rect x="20" y="42" width="60" height="42" rx="1"/>' +
           '<path d="M28 42 L28 22 L36 14 L36 42 M64 42 L64 22 L72 14 L72 42"/>' +
@@ -138,7 +138,7 @@ var STATIONS = [
    {
     id: 'dom',
     title: 'Aachener Dom',
-    imageSrc: 'dom.jpg',
+    imageSrc: 'images/dom.jpg',
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
