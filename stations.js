@@ -75,7 +75,7 @@ var STATIONS = [
    {
     id: 'augustinerplatzbrunnen',
     title: 'Agustinerplatzbrunnen',
-    imageSrc: null,
+    imageSrc: images/augustinerplatzbrunnen.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
@@ -90,7 +90,7 @@ var STATIONS = [
    {
     id: 'rathaus',
     title: 'Rathaus',
-    imageSrc: null,
+    imageSrc: images/rathaus.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<rect x="20" y="42" width="60" height="42" rx="1"/>' +
           '<path d="M28 42 L28 22 L36 14 L36 42 M64 42 L64 22 L72 14 L72 42"/>' +
@@ -106,7 +106,7 @@ var STATIONS = [
   {
     id: 'katschhof',
     title: 'Katschhof',
-    imageSrc: null,
+    imageSrc: images/katschhof.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<rect x="20" y="42" width="60" height="42" rx="1"/>' +
           '<path d="M28 42 L28 22 L36 14 L36 42 M64 42 L64 22 L72 14 L72 42"/>' +
@@ -122,7 +122,7 @@ var STATIONS = [
     {
     id: 'puppenbrunnen',
     title: 'Puppenbrunnen',
-    imageSrc: null,
+    imageSrc: images/puppenbrunnen.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<rect x="20" y="42" width="60" height="42" rx="1"/>' +
           '<path d="M28 42 L28 22 L36 14 L36 42 M64 42 L64 22 L72 14 L72 42"/>' +
@@ -138,7 +138,7 @@ var STATIONS = [
    {
     id: 'dom',
     title: 'Aachener Dom',
-    imageSrc: null,
+    imageSrc: dpm.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
@@ -153,7 +153,7 @@ var STATIONS = [
    {
     id: 'elisengarten',
     title: 'Elisengarten',
-    imageSrc: null,
+    imageSrc: images/elisengarten.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
@@ -168,7 +168,7 @@ var STATIONS = [
   {
     id: 'elisenbrunnen',
     title: 'Elisenbrunnen',
-    imageSrc: null,
+    imageSrc: images/elisenbrunnen.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M14 34 L50 18 L86 34"/>' +
           '<rect x="14" y="34" width="72" height="6"/>' +
@@ -184,7 +184,7 @@ var STATIONS = [
    {
     id: 'restaurant',
     title: 'Restaurant Elisenbrunnen',
-    imageSrc: null,
+    imageSrc: images/restaurant.jpg,
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M14 34 L50 18 L86 34"/>' +
           '<rect x="14" y="34" width="72" height="6"/>' +
