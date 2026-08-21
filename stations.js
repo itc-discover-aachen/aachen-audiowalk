@@ -23,7 +23,7 @@ var STATIONS = [
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
-    audioSrc: 'test.mp3',//'audio/01-dom.mp3',
+    audioSrc: 'audio/test.mp3',//'audio/01-dom.mp3',
     text: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
           'des heutigen Doms. Das oktogonale Zentrum zählt zu den ältesten erhaltenen ' +
           'Bauwerken nördlich der Alpen und war 1978 die erste deutsche Stätte auf ' +
