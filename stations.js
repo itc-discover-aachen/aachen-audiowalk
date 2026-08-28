@@ -11,8 +11,22 @@
      icon      – SVG-Illustration (genutzt, solange kein imageSrc gesetzt ist)
      imageSrc  – optional: Pfad zu einem echten Foto; überschreibt icon
      audioSrc  – Pfad zur Audiodatei
-     text      – kurzer Beschreibungstext
+     textSrc   – Stationstext. Zwei Schreibweisen sind erlaubt:
+                 a) Pfad auf eine Textdatei, z. B. 'texts/Ponttor.txt'
+                    (erkannt an der Endung .txt, wird nachgeladen)
+                 b) der Text direkt hier im Code, wie bisher
+                 Empfohlen ist a) — laengere Texte lassen sich in einer
+                 eigenen Datei deutlich angenehmer schreiben.
      mapsUrl   – optional: Link zum Standort auf Google Maps
+
+   ZU DEN TEXTDATEIEN:
+     - Ablage im Ordner texts/, Endung .txt, Kodierung UTF-8.
+     - Jede nicht-leere Zeile wird zu einem eigenen Absatz.
+     - Reiner Text, kein HTML (spitze Klammern werden angezeigt,
+       nicht interpretiert).
+     - Gross-/Kleinschreibung im Dateinamen muss exakt stimmen:
+       Auf GitHub Pages ist 'Ponttor.txt' nicht dasselbe wie
+       'ponttor.txt'.
    ============================================================== */
 var STATIONS = [
    {
@@ -24,13 +38,7 @@ var STATIONS = [
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
     audioSrc: 'audio/test.mp3',//'audio/01-dom.mp3',
-    text:'Willkommen an der ersten Station. Sie stehen am Pontwall, direkt an der Bushaltestelle Ponttor. Drehen Sie sich einmal um, weg von der Straße: Nun sehen Sie das Ponttor. Gehen Sie ruhig die Treppe hinunter und ein Stück in die Durchfahrt hinein, bis in den offenen Gang zwischen den beiden Torbauten, und gucken Sie sich dort um.' +
-         'Was Sie gerade betreten haben, ist keine einfache Toröffnung, sondern eine Doppeltoranlage. Zuerst das vorgelagerte Tor mit seinen zwei Türmen, dann der zinnenbewehrte Brückengang, der früher über den Stadtgraben führte, und schließlich die dreistöckige Toranlage. Wer die Stadt angreifen wollte, musste genau diesen Weg nehmen – langsam, in der Enge, von oben und von beiden Seiten einsehbar.  Wenn Sie unter der dreistöckigen Toranlage nach oben schauen, sehen Sie die bis heute erhaltenen Fallgatter und Pechtraufe.' +
-         'Fertiggestellt wurde das Ponttor um 1320. Aachen hatte damals ein Platzproblem: Vor der alten Stadtmauer waren neue Siedlungen und Kirchen gewachsen, also brauchte es einen zweiten, größeren Mauerring. Elf Tore hatte diese Befestigung. Übrig geblieben sind zwei – das Marschiertor im Süden und dieses hier im Norden, welches zu einigen wenigen erhaltenen Doppeltoranlagen im Rheinland zählt.' +
-         'Der Name begegnet Ihnen hier überall: Pontwall, Pontstraße, Pontviertel. Er kommt vom lateinischen Wort für Brücke – nur lag die Brücke nicht hier. Zur Römerzeit endete die Stadt ein gutes Stück weiter südlich, und wer sie nach Norden verlassen wollte, musste über eine Brücke durch sumpfiges Gelände. Alles, was später jenseits dieser Brücke entstand, hieß Pontviertel. Die Straße ist schon 1232 unter diesem Namen belegt, fast hundert Jahre bevor das Tor fertig war. Das Ponttor hat seinen Namen also vom Viertel geerbt.' +
-         'Belagert wurde die Anlage allerdings selten. Die meiste Zeit kassierte man hier die Arzise, den Einfuhrzoll auf alles, was in die Stadt kam. Gelegentlich diente das Tor als Gefängnis, und 1735 half es sogar als Schulraum aus, weil Aachen noch keine eigenen Schulgebäude hatte. Am knappsten wurde es Ende des 19. Jahrhunderts: Das Tor war so heruntergekommen, dass ein Abriss im Raum stand. Es überlebte – und wurde später ausgerechnet zum Heimatmuseum.' +
-         'Und heute? Werfen Sie einen Blick auf die Fenster in den Obergeschossen. Seit 1947 sind dort Pfadfindergruppen untergebracht, inzwischen mehrere Stämme aus verschiedenen Verbänden. Wenn Sie abends hier vorbeikommen und oben Licht brennt, ist in der Wehranlage gerade Gruppenstunde.' +
-         'Für die nächste Station gehen Sie durch das Tor hindurch, wenden sich nach rechts, und folgen der Malteserstraße bis zum SuperC.', 
+    textSrc: 'texts/Ponttor.txt',
     mapsUrl: 'https://www.google.com/maps/place/Ponttor/@50.7810127,6.0754486,16.71z/data=!4m10!1m2!2m1!1sPonttor!3m6!1s0x47c09977675fb641:0x5701a4017f4764c5!8m2!3d50.7816158!4d6.0781955!15sCgdQb250dG9ykgETaGlzdG9yaWNhbF9sYW5kbWFya-ABAA!16s%2Fm%2F0x24gd5?entry=ttu&g_ep=EgoyMDI2MDgxMC4wIKXMDSoASAFQAw%3D%3D'
    },
    {
@@ -42,7 +50,7 @@ var STATIONS = [
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
           '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
     audioSrc: 'audio/05-superc.mp3',
-    text: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
+    textSrc: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
           'zur Wissenschaftsstadt — und damit einen passenden Schlusspunkt für alle, ' +
           'die gleich wieder in den Hörsaal zurückkehren.',
     mapsUrl: 'https://www.google.com/maps/place/Super+C/@50.7778945,6.0786742,18.38z/data=!4m6!3m5!1s0x47c099797da11f27:0x5c6e1f3d34e9438a!8m2!3d50.7780586!4d6.0787768!16s%2Fg%2F11c2kw44xj?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
@@ -56,7 +64,7 @@ var STATIONS = [
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
           '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
     audioSrc: 'audio/05-superc.mp3',
-    text: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
+    textSrc: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
           'zur Wissenschaftsstadt — und damit einen passenden Schlusspunkt für alle, ' +
           'die gleich wieder in den Hörsaal zurückkehren.',
     mapsUrl: 'https://www.google.com/maps/place/Templergraben+55,+52062+Aachen/@50.7767054,6.076662,17.21z/data=!3m1!5s0x47c099796c485341:0x4b64613219ad90d5!4m6!3m5!1s0x47c099796c4dcfa1:0xe15a5b1ac40fdcb9!8m2!3d50.7777258!4d6.0777748!16s%2Fg%2F11xf3bpzxg?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
@@ -70,7 +78,7 @@ var STATIONS = [
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
           '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
     audioSrc: 'audio/05-superc.mp3',
-    text: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
+    textSrc: 'Das markante Gebäude der RWTH markiert den Übergang von der Kaiserstadt ' +
           'zur Wissenschaftsstadt — und damit einen passenden Schlusspunkt für alle, ' +
           'die gleich wieder in den Hörsaal zurückkehren.',
     mapsUrl: 'https://www.google.com/maps/place/Klosterrather+Hof+-+Torbau/@50.7773042,6.0786787,18.96z/data=!4m6!3m5!1s0x47c099185145fd15:0x140a7c8d36b27ee!8m2!3d50.7771366!4d6.0797923!16s%2Fg%2F11ppp5mrzw?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
@@ -84,7 +92,7 @@ var STATIONS = [
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
     audioSrc: 'audio/01-dom.mp3',
-    text: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
+    textSrc: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
           'des heutigen Doms. Das oktogonale Zentrum zählt zu den ältesten erhaltenen ' +
           'Bauwerken nördlich der Alpen und war 1978 die erste deutsche Stätte auf ' +
           'der UNESCO-Welterbeliste.',
@@ -100,7 +108,7 @@ var STATIONS = [
           '<path d="M40 84 V64 H60 V84"/>' +
           '<path d="M30 54 h8 M62 54 h8"/></svg>',
     audioSrc: 'audio/02-rathaus.mp3',
-    text: 'Errichtet auf den Fundamenten der karolingischen Königshalle, war das ' +
+    textSrc: 'Errichtet auf den Fundamenten der karolingischen Königshalle, war das ' +
           'Rathaus Schauplatz von dreißig Königskrönungen. Im Krönungssaal im ersten ' +
           'Obergeschoss hängen bis heute die Kaiserbilder von Karl dem Großen bis ' +
           'Franz II.',
@@ -116,7 +124,7 @@ var STATIONS = [
           '<path d="M40 84 V64 H60 V84"/>' +
           '<path d="M30 54 h8 M62 54 h8"/></svg>',
     audioSrc: 'audio/02-rathaus.mp3',
-    text: 'Errichtet auf den Fundamenten der karolingischen Königshalle, war das ' +
+    textSrc: 'Errichtet auf den Fundamenten der karolingischen Königshalle, war das ' +
           'Rathaus Schauplatz von dreißig Königskrönungen. Im Krönungssaal im ersten ' +
           'Obergeschoss hängen bis heute die Kaiserbilder von Karl dem Großen bis ' +
           'Franz II.',
@@ -132,7 +140,7 @@ var STATIONS = [
           '<path d="M40 84 V64 H60 V84"/>' +
           '<path d="M30 54 h8 M62 54 h8"/></svg>',
     audioSrc: 'audio/02-rathaus.mp3',
-    text: 'Errichtet auf den Fundamenten der karolingischen Königshalle, war das ' +
+    textSrc: 'Errichtet auf den Fundamenten der karolingischen Königshalle, war das ' +
           'Rathaus Schauplatz von dreißig Königskrönungen. Im Krönungssaal im ersten ' +
           'Obergeschoss hängen bis heute die Kaiserbilder von Karl dem Großen bis ' +
           'Franz II.',
@@ -147,7 +155,7 @@ var STATIONS = [
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
     audioSrc: 'audio/01-dom.mp3',
-    text: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
+    textSrc: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
           'des heutigen Doms. Das oktogonale Zentrum zählt zu den ältesten erhaltenen ' +
           'Bauwerken nördlich der Alpen und war 1978 die erste deutsche Stätte auf ' +
           'der UNESCO-Welterbeliste.',
@@ -162,7 +170,7 @@ var STATIONS = [
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
     audioSrc: 'audio/01-dom.mp3',
-    text: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
+    textSrc: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
           'des heutigen Doms. Das oktogonale Zentrum zählt zu den ältesten erhaltenen ' +
           'Bauwerken nördlich der Alpen und war 1978 die erste deutsche Stätte auf ' +
           'der UNESCO-Welterbeliste.',
@@ -178,7 +186,7 @@ var STATIONS = [
           '<path d="M24 40 v34 M40 40 v34 M60 40 v34 M76 40 v34"/>' +
           '<path d="M14 78 h72"/></svg>',
     audioSrc: 'audio/03-elisenbrunnen.mp3',
-    text: 'Der klassizistische Pavillon von 1827 führt die schwefelhaltigen ' +
+    textSrc: 'Der klassizistische Pavillon von 1827 führt die schwefelhaltigen ' +
           'Thermalquellen, die schon die Römer schätzten. Die offene Wandelhalle ' +
           'war über Generationen Treffpunkt der Kurgäste — heute ein beliebter ' +
           'Ausgangspunkt für Stadtspaziergänge.',
@@ -194,7 +202,7 @@ var STATIONS = [
           '<path d="M24 40 v34 M40 40 v34 M60 40 v34 M76 40 v34"/>' +
           '<path d="M14 78 h72"/></svg>',
     audioSrc: 'audio/03-elisenbrunnen.mp3',
-    text: 'Der klassizistische Pavillon von 1827 führt die schwefelhaltigen ' +
+    textSrc: 'Der klassizistische Pavillon von 1827 führt die schwefelhaltigen ' +
           'Thermalquellen, die schon die Römer schätzten. Die offene Wandelhalle ' +
           'war über Generationen Treffpunkt der Kurgäste — heute ein beliebter ' +
           'Ausgangspunkt für Stadtspaziergänge.',

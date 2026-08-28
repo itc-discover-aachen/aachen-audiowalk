@@ -334,6 +334,52 @@ a { color: inherit; }
   margin: 0 0 var(--space-2);
 }
 
+/* ------------------------------------------------------------
+   Auf-/zuklappbarer Stationstext
+   Grundzustand: eingeklappt. Der Umschalter ist bewusst
+   zurueckhaltend gestaltet, damit der Maps-Button darunter der
+   auffaelligere bleibt.
+   ------------------------------------------------------------ */
+.station__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 var(--space-2);
+  padding: 11px 16px;
+  background: transparent;
+  border: 1.5px solid var(--color-line);
+  border-radius: 999px;
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.station__toggle:hover { border-color: var(--color-accent-light); }
+.station__toggle.is-open { background: var(--color-accent-soft); border-color: var(--color-accent-soft); }
+
+.station__chevron {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  /* Der Chevron zeigt im Markup nach rechts (">"). Eingeklappt
+     wird er nach unten gedreht, ausgeklappt nach oben. */
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.station__toggle.is-open .station__chevron { transform: rotate(-90deg); }
+
+/* Letzter Absatz im aufgeklappten Bereich braucht keinen
+   zusaetzlichen Abstand — der Button darunter bringt seinen mit. */
+.station__collapse .station__text:last-child { margin-bottom: var(--space-2); }
+
 /* ============================================================
    7. ABSCHLUSS
    ============================================================ */
