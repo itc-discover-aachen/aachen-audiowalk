@@ -24,10 +24,7 @@ var STATIONS = [
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
     audioSrc: 'audio/test.mp3',//'audio/01-dom.mp3',
-    text: 'Um 800 ließ Karl der Große hier seine Pfalzkapelle errichten — den Kern ' +
-          'des heutigen Doms. Das oktogonale Zentrum zählt zu den ältesten erhaltenen ' +
-          'Bauwerken nördlich der Alpen und war 1978 die erste deutsche Stätte auf ' +
-          'der UNESCO-Welterbeliste.',
+    text: 'texts/ponttor.txt',
     mapsUrl: 'https://www.google.com/maps/place/Ponttor/@50.7810127,6.0754486,16.71z/data=!4m10!1m2!2m1!1sPonttor!3m6!1s0x47c09977675fb641:0x5701a4017f4764c5!8m2!3d50.7816158!4d6.0781955!15sCgdQb250dG9ykgETaGlzdG9yaWNhbF9sYW5kbWFya-ABAA!16s%2Fm%2F0x24gd5?entry=ttu&g_ep=EgoyMDI2MDgxMC4wIKXMDSoASAFQAw%3D%3D'
    },
    {
