@@ -124,7 +124,7 @@
           '<div class="station__figure">' + figure + '</div>' +
           '<p class="station__eyebrow">' + eyebrow + '</p>' +
           '<h2 class="station__title">' + station.title + '</h2>' +
-          '<audio class="station__audio" controls preload="none" src="' + station.audioSrc + '">' +
+          '<audio class="station__audio" controls preload="metadata" src="' + station.audioSrc + '">' +
             'Ihr Browser unterstützt die Audiowiedergabe leider nicht.' +
           '</audio>' +
           '<button type="button" class="station__toggle" aria-expanded="false" aria-controls="text-' + station.id + '">' +
