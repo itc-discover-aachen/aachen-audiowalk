@@ -293,6 +293,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
 }
 
 /* Eigens gezeichnete Wahrzeichen-Illustrationen statt Fotos:
