@@ -52,7 +52,7 @@ var STATIONS = [
           '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
           '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
-    audioSrc: 'audio/05-superc.mp3',
+    audioSrc: 'audio/Hauptgebäude.wav',
     textSrc: 'texts/Hauptgebäude.txt',
     mapsUrl: 'https://www.google.com/maps/place/Templergraben+55,+52062+Aachen/@50.7767054,6.076662,17.21z/data=!3m1!5s0x47c099796c485341:0x4b64613219ad90d5!4m6!3m5!1s0x47c099796c4dcfa1:0xe15a5b1ac40fdcb9!8m2!3d50.7777258!4d6.0777748!16s%2Fg%2F11xf3bpzxg?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
    },
@@ -64,7 +64,7 @@ var STATIONS = [
           '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
           '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
-    audioSrc: 'audio/05-superc.mp3',
+    audioSrc: 'audio/Karmantor.wav',
     textSrc: 'texts/Karmantor.txt',
     mapsUrl: 'https://www.google.com/maps/place/Klosterrather+Hof+-+Torbau/@50.7773042,6.0786787,18.96z/data=!4m6!3m5!1s0x47c099185145fd15:0x140a7c8d36b27ee!8m2!3d50.7771366!4d6.0797923!16s%2Fg%2F11ppp5mrzw?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
    },
@@ -76,7 +76,7 @@ var STATIONS = [
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
-    audioSrc: 'audio/01-dom.mp3',
+    audioSrc: 'audio/Augustinerbrunnen.wav',
     textSrc: 'texts/Augustinerbrunnen.txt',
     mapsUrl: 'https://www.google.com/maps/place/Augustinerplatzbrunnen/@50.7763844,6.0801439,17.79z/data=!4m6!3m5!1s0x47c099000313fd03:0x92eb7a483227b59b!8m2!3d50.7761376!4d6.0811338!16s%2Fg%2F1229kqxz?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
   },
@@ -89,7 +89,7 @@ var STATIONS = [
           '<path d="M28 42 L28 22 L36 14 L36 42 M64 42 L64 22 L72 14 L72 42"/>' +
           '<path d="M40 84 V64 H60 V84"/>' +
           '<path d="M30 54 h8 M62 54 h8"/></svg>',
-    audioSrc: 'audio/02-rathaus.mp3',
+    audioSrc: 'audio/Rathaus.wav',
     textSrc: 'texts/Rathaus.txt',
     mapsUrl: 'https://www.google.com/maps/place/Rathaus+Aachen/@50.775718,6.0825204,18.38z/data=!4m6!3m5!1s0x47c0997b5dd487b9:0xc4588ba5612a8cfe!8m2!3d50.7761517!4d6.0838046!16s%2Fm%2F0x1bh33?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
   },
@@ -102,7 +102,7 @@ var STATIONS = [
           '<path d="M28 42 L28 22 L36 14 L36 42 M64 42 L64 22 L72 14 L72 42"/>' +
           '<path d="M40 84 V64 H60 V84"/>' +
           '<path d="M30 54 h8 M62 54 h8"/></svg>',
-    audioSrc: 'audio/02-rathaus.mp3',
+    audioSrc: 'audio/Katschhof.wav',
     textSrc: 'texts/Katschhof.txt',
     mapsUrl: 'https://www.google.com/maps/place/Katschhof/@50.7749377,6.0836096,18.71z/data=!4m6!3m5!1s0x47c0997ca44773c9:0xb977c1665d4c8e0f!8m2!3d50.7753768!4d6.0838146!16s%2Fg%2F1222yz09?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
   },
