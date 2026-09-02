@@ -40,7 +40,7 @@ var STATIONS = [
           '<path d="M20 84 V40 L50 26 L80 40 V84 Z"/>' +
           '<path d="M20 40 L80 40 M50 26 V84"/>' +
           '<path d="M30 84 V56 H44 V84 M56 84 V56 H70 V84"/></svg>',
-    audioSrc: 'audio/05-superc.mp3',
+    audioSrc: 'audio/SuperC.wav',
     textSrc: 'texts/SuperC.txt',
     mapsUrl: 'https://www.google.com/maps/place/Super+C/@50.7778945,6.0786742,18.38z/data=!4m6!3m5!1s0x47c099797da11f27:0x5c6e1f3d34e9438a!8m2!3d50.7780586!4d6.0787768!16s%2Fg%2F11c2kw44xj?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
    },
@@ -70,7 +70,7 @@ var STATIONS = [
    },
    {
     id: 'augustinerplatzbrunnen',
-    title: 'Agustinerplatzbrunnen',
+    title: 'Augustinerplatzbrunnen',
     imageSrc: 'images/augustinerplatzbrunnen.jpg',
     icon: '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
