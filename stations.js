@@ -114,7 +114,7 @@ var STATIONS = [
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
-    audioSrc: 'audio/01-dom.mp3',
+    audioSrc: 'audio/Dom.wav',
     textSrc: 'texts/Dom.txt',
     mapsUrl: 'https://www.google.com/maps/place/Aachener+Dom/@50.7744579,6.0835469,18.42z/data=!4m6!3m5!1s0x47c0997c84f087fb:0x38730b23e56788c3!8m2!3d50.7747198!4d6.0839201!16zL20vMDFmZHFw?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3Dm'
   },
@@ -126,7 +126,7 @@ var STATIONS = [
           '<path d="M50 8 L82 26 L82 68 L50 92 L18 68 L18 26 Z"/>' +
           '<path d="M50 8 L50 36 M18 26 L50 46 L82 26 M18 68 L50 46 L82 68"/>' +
           '<circle cx="50" cy="46" r="9"/></svg>',
-    audioSrc: 'audio/01-dom.mp3',
+    audioSrc: 'audio/Elisengarten.wav',
     textSrc: 'texts/Elisengarten.txt',
     mapsUrl: 'https://www.google.com/maps/place/Elisengarten/@50.774408,6.0856716,19z/data=!4m6!3m5!1s0x47c099ab67e5d17f:0x8acb3855af9e2353!8m2!3d50.7742989!4d6.0861875!16s%2Fg%2F121g6t1c?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
   },
@@ -139,7 +139,7 @@ var STATIONS = [
           '<rect x="14" y="34" width="72" height="6"/>' +
           '<path d="M24 40 v34 M40 40 v34 M60 40 v34 M76 40 v34"/>' +
           '<path d="M14 78 h72"/></svg>',
-    audioSrc: 'audio/03-elisenbrunnen.mp3',
+    audioSrc: 'audio/Elisenbrunnen.wav',
     textSrc: 'texts/Elisenbrunnen.txt',
     mapsUrl: 'https://www.google.com/maps/place/Elisenbrunnen/@50.7741148,6.0866496,19.83z/data=!4m6!3m5!1s0x47c0996312556c85:0x8eb3785ac7865d2e!8m2!3d50.7740678!4d6.0869838!16s%2Fg%2F121k2brc?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D'
   },
